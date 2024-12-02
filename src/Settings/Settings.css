@@ -1,0 +1,33 @@
+/* Settings Component CSS */
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    color: #29335c;
+    font-family: Arial, sans-serif;
+  }
+  
+  .settings-welcome-text {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .language-button {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #3a5fcd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .language-button:hover {
+    background-color: #2a4fa0;
+  }
+  

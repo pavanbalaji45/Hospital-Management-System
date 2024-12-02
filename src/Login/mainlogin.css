@@ -1,0 +1,229 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+
+.admin-login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    height: 100vh;
+    position: absolute;
+  width: 100vw;
+  /* left: 20vw; */
+    /* margin-left: 30%; */
+    /* margin-top: 5%; */
+}
+
+.admin-login-container {
+  display: flex;
+  height: 320px;
+  width: 640px;
+}
+
+.admin-login-left {
+  color: black;
+  background: rgb(24, 20, 20,0.3);
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+
+.admin-login-header {
+  font-size: 45px;
+  color: rgb(23, 31, 37);
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+
+.admin-login-eula {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 40px;
+}
+
+.admin-login-right {
+  background: #474a59;
+  box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22);
+  color: #f1f1f2;
+  position: relative;
+  width: 50%;
+}
+
+.admin-svg {
+  position: absolute;
+  width: 320px;
+}
+
+.admin-path {
+  fill: none;
+  stroke: url(#linearGradient);
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+
+.admin-login-form {
+  margin: 40px;
+  position: absolute;
+}
+
+.admin-login-label {
+  color: #c2c2c5;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.admin-login-input {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+
+.admin-login-input::-moz-focus-inner {
+  border: 0;
+}
+
+.admin-login-input#submit {
+  color: #707075;
+  margin-top: 40px;
+  transition: color 300ms;
+}
+
+.admin-login-input#submit:focus {
+  color: #f2f2f2;
+}
+
+.admin-login-input#submit:active {
+  color: #d0d0d2;
+}
+
+
+
+/* Clouds */
+.cloud {
+    position: absolute;
+    top: 10%;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 30px 10px 50px #ffffff, 70px 10px 60px #ffffff,
+      120px 10px 40px #ffffff;
+    opacity: 0.7;
+    animation: moveClouds 20s linear infinite;
+  }
+  
+  .cloud-1 {
+    width: 100px;
+    height: 50px;
+    top: 15%;
+    left: -10%;
+    animation-delay: 0s;
+  }
+  
+  .cloud-2 {
+    width: 150px;
+    height: 75px;
+    top: 25%;
+    left: -20%;
+    animation-delay: 3s;
+  }
+  
+  .cloud-3 {
+    width: 80px;
+    height: 40px;
+    top: 20%;
+    left: -15%;
+    animation-delay: 6s;
+  }
+  .cloud-4{
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: -20%;
+    animation-delay: 2s;
+  }
+  
+  @keyframes moveClouds {
+    0% {
+        opacity: 1;
+
+      transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+      transform: translateX(80vw);
+    }
+  }
+  
+ 
+  
+  /* Flight animation at the top */
+  .flight {
+    position: absolute;
+    top: 5%;
+    left: -10%;
+    width: 60px;
+    height: 20px;
+    background: #fff;
+    clip-path: polygon(0 50%, 25% 0%, 100% 50%, 25% 100%);
+    animation: moveFlight 15s linear infinite;
+  }
+  
+  @keyframes moveFlight {
+    0% {
+        opacity: 1;
+
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+        opacity: 0;
+      transform: translateX(80vw) translateY(-10px);
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    /* .admin-login-container {
+      flex-direction: column;
+      max-width: 90%;
+    } */
+  
+    .admin-login-left ,.cloud, .cloud-1, .cloud-2, .cloud-3, .cloud-4 {
+      display: none;
+    }
+    
+  
+    .admin-login-right {
+      width: 50%;
+
+      left: 20%;
+      /* margin: auto; */
+      /* padding: 20px; */
+    }
+  
+    /* .admin-login-header {
+      font-size: 24px;
+      text-align: center;
+    } */
+  }
+
+  @media (max-width: 610px) {
+    .admin-login-left ,.cloud, .cloud-1, .cloud-2, .cloud-3, .cloud-4 {
+      display: none;
+    }
+  
+    .admin-login-right {
+      left: 25%;
+      bottom: 0;
+    }
+    .admin-path{
+      display: none;
+    }
+  
+  }

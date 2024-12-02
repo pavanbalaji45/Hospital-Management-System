@@ -1,0 +1,96 @@
+.reception-container {
+    width: 65%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 2px solid #4a77b1;
+    border-radius: 12px;
+    background-color: #f7f9fc;
+
+  }
+  .reception-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #29335c;
+    margin-bottom: 1.5rem;
+  }
+  
+  .reception-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label-name, .label-age, .label-gender, .label-phone, .label-address, .label-symptoms,.label-weight,.label-bloodPressure,.label-doctorName,.label-division{
+    font-weight: 600;
+    color: #4a77b1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-name, .input-age, .input-phone, .select-gender, .textarea-address, .textarea-symptoms ,.input-weight,.input-bloodPressure ,.input-doctorName{
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #b3cce6;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .select-gender {
+    background-color: #fff;
+  }
+  
+  .textarea-address, .textarea-symptoms {
+    height: 80px;
+  }
+  
+  .submit-button {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4a77b1;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #3b608a;
+  }
+  
+  .select-division, .select-doctorName {
+    margin-top: 0.4rem;
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  
+
+
+  
+  .background {
+    background: linear-gradient(45deg, #45ffae, #f4f2f7, #29f37a, #cbcbcb, #b4b3bb, #00270d);
+    background-size: 300% 300%;
+    animation: colorMove 10s linear infinite;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* color: #fff; */
+    /* text-align: center; */
+  }
+  
+  @keyframes colorMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

@@ -1,0 +1,217 @@
+/* ManageStaff.css */
+
+.manage-staff {
+    width: auto;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.h2, .h3 {
+    text-align: center;
+    color: #29335c;
+}
+
+.staff-form, .modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.staff-form input,
+.modal-form input,
+.staff-form select,
+.staff-form button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.staff-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.staff-form button:hover {
+    background-color: #45a049;
+}
+
+.staff-list {
+    margin-top: 20px;
+}
+
+.staff-list ul {
+    list-style-type: none;
+}
+.para{
+    text-align: center;
+}
+
+.staff-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #382626;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.staff-list button {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.staff-list button:first-child {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+.staff-list button:last-child {
+    background-color: #f44336;
+    padding: 10px;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 990px) {
+    /* Tablet View */
+    .blob,.blob1,.blob2,.blob3,.blob4{
+        display: none;
+    }
+    .manage-staff {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .staff-form input,
+    .modal-form input,
+    .staff-form select,
+    .staff-form button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .staff-list li {
+        padding: 15px;
+    }
+
+    .modal {
+        width: 80%;
+        max-width: 500px;
+        padding: 15px;
+    }
+
+    .staff-list button {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile View */
+
+    .manage-staff {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .h2, .h3 {
+        font-size: 1.2rem;
+    }
+
+    .staff-form input,
+    .modal-form input,
+    .staff-form select,
+    .staff-form button {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    .staff-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .staff-list button {
+        padding: 6px;
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+
+    .modal {
+        width: 90%;
+        max-width: 400px;
+        padding: 15px;
+    }
+    
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+.bg{
+    background-color: bisque;
+    background-size: 500% 500%;
+    width: auto;
+    height: auto;
+
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.btnn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btnn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+  
+  .btnn:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+    transform: scale(0.95); /* Slightly smaller when clicked */
+  }
+  

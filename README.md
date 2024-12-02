@@ -1,59 +1,70 @@
-# Hospital-Management-System
+# Getting Started with Create React App
 
-The Hospital Management System is a web application designed to manage and streamline hospital operations. The system allows administrators, receptionists, doctors, and ambulance staff to perform various tasks efficiently. It includes patient management, staff management, and real-time interaction with a chatbot designed for patients.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The system is built using React, with support for multiple languages, encrypted password management, and routing for different user roles.
+## Available Scripts
 
-Features
-Multilingual Support: The application supports multiple languages for accessibility.
-User Authentication: Separate logins for admin, reception, doctor, and ambulance staff with encrypted passwords.
-Patient Management: Includes a patient bot to assist patients, and a patient search functionality for quick access to patient information.
-Staff Management: Admins can manage staff through the Manage Staff section.
-Ambulance Tracking: The system includes a dedicated section for managing ambulance-related operations.
-Doctor Orders: Doctors can place orders for patient care directly through the platform.
-Settings: Admins can update system settings.
+In the project directory, you can run:
 
-Technologies Used
-Frontend:
+### `npm start`
 
-React: JavaScript library for building user interfaces.
-React Router: For handling routing within the application.
-i18next: For multilingual support.
-Axios: For handling HTTP requests.
-bcryptjs: For password encryption and decryption.
-Backend (assumed):
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Although the backend is not provided in this project, password encryption is handled in the frontend using bcryptjs.
-Hosting:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Netlify: For hosting the frontend of the application.
+### `npm test`
 
-Installation
-Prerequisites
-Before running the project, ensure you have the following installed:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Node.js (version 14 or higher)
-npm (Node Package Manager)
+### `npm run build`
 
-![image](https://github.com/user-attachments/assets/47acca96-23fa-4fc8-b324-39e9dc4dd98b)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-![image](https://github.com/user-attachments/assets/478797c0-6a5b-4802-94ff-3de7a03932bd)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Password Encryption
-Passwords are encrypted using bcryptjs on the client side before being sent to the server for authentication.
-This ensures secure password storage and reduces the risk of password theft.
-Patient Bot
-The Patient Bot is designed to interact with patients, provide general information, answer common questions, and assist in managing patient inquiries. It is integrated directly into the system and can be accessed from the Patient route.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Future Enhancements
-Real-time Chat: Add real-time chat functionality between doctors and patients.
-Doctor Scheduling: Implement a scheduling system for doctors to manage patient appointments.
-Mobile App: Develop a mobile version of the app for better accessibility.
-Advanced Search: Improve the search functionality for better patient record retrieval.
-![image](https://github.com/user-attachments/assets/d06d495a-58b8-4b53-bac6-3fe02411030c)
-![image](https://github.com/user-attachments/assets/190757cd-a2da-4bb9-a14b-5765ed31c671)
-![image](https://github.com/user-attachments/assets/a947bb47-28bc-4e61-8c6a-06ba535c2652)
-![image](https://github.com/user-attachments/assets/003459e3-9fdb-43a2-9c52-2d4e89b77a8f)
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

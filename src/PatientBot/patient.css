@@ -1,0 +1,340 @@
+.bot-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+  }
+  .chat-reply {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+    min-width: 180px;
+    max-width: 250px;
+    margin: 10px 0 10px auto; /* Align to the right */
+    background-color: #7888ff61; /* Light blue for user reply */
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-photo-user {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px; /* Space between message and photo */
+  }
+  .chat-message {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    max-width: 250px;
+    margin: 10px 0;
+    background-color: #e1ffc7; /* WhatsApp-like light green */
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  .contact-name-user{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    margin-left:20px;
+    color: #07275e;
+  }
+  .profile-photo-user{
+    border: 1px solid #08084a;
+    color:  #08084a;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .message-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    margin-left: -30px;
+    color: #075e54; /* WhatsApp dark green */
+  }
+  
+  .message-text {
+    font-size: 14px;
+    margin: 0;
+    margin-left: 0px;
+    color: #333;
+  }
+  /* Update the bot-container to enable vertical scrolling */
+.bot-container {
+  min-width: 75%;
+  /* min-height: 80vh; */
+  height: auto;
+  max-width: 1000px;
+  max-height: 600px; /* Limit height to enable scroll */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow-y: auto; /* Enables vertical scroll */
+}
+
+  .bot-title {
+    color: #29335c;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .bot-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bot-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bot-step label {
+    font-size: 1rem;
+    color: #29335c;
+    margin-bottom: 5px;
+  }
+  
+  .bot-step input,
+  .bot-step select {
+    width: 55%;
+    flex: auto;
+    align-items: flex-start;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #110f0f;
+    border-radius: 25px;
+  }
+  
+  
+  
+  .animate-slide-in {
+    animation: slideIn 0.5s ease forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+
+/* Create and animate multiple floating blobs */
+@keyframes float {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(-20px) translateX(20px);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+  
+  @keyframes moveX {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100vw);
+    }
+  }
+  
+  /* Main animation for moving background shapes */
+  .background-blobs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Places the animation behind all content */
+  }
+  
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Adjust the sizes and colors for each blob */
+  .blob1 {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #ff6b6b, #ff6347);
+    top: 20%;
+    left: 10%;
+    animation: moveX 15s linear infinite;
+  }
+  
+  .blob2 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #6b6bff, #4a4aff);
+    top: 50%;
+    left: 60%;
+    animation: moveX 20s linear infinite;
+  }
+  
+  .blob3 {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, #6bffb8, #4aff90);
+    top: 80%;
+    left: 30%;
+    animation: moveX 18s linear infinite;
+  }
+  
+  .blob4 {
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, #ffc06b, #ffa64a);
+    top: 40%;
+    left: 80%;
+    animation: moveX 12s linear infinite;
+  }
+  
+  /* Additional blobs with different sizes and speeds */
+  .blob5 {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #d36bff, #b14aff);
+    top: 70%;
+    left: 20%;
+    animation: moveX 25s linear infinite;
+  }
+
+
+  
+  
+  
+
+  .line {
+    position: absolute;
+    width: 3px;
+    border-radius: 2px; /* Width of the line */
+    height: 10px; /* Height of the line */
+    background-color: rgba(3, 64, 117, 0.8); /* White color with high opacity */
+    top: -20px; /* Start position above the viewport */
+    opacity: 0; /* Start invisible */
+    animation: drop 10s linear infinite; /* Drop animation */
+}
+
+/* Animation to fall straight down */
+@keyframes drop {
+    0% {
+        top: -20px; /* Start above the viewport */
+        opacity: 0; /* Start invisible */
+    }
+    50% {
+        opacity: 0.6; /* Fully visible in the middle */
+    }
+    
+    100% {
+            top: 100%;
+        /* Move to the bottom of the viewport */
+        opacity: 0; /* Fade out as it falls */
+    }
+}
+
+/* Positioning the lines differently for effect */
+.line1 {
+    left: 10%; /* Position line 1 */
+    animation-delay: 0s; /* No delay */
+}
+
+.line2 {
+    left: 20%; /* Position line 2 */
+    animation-delay: 1s; /* Delay line 2 by 0.5 seconds */
+}
+
+.line3 {
+    left: 30%; /* Position line 3 */
+    animation-delay: 1s; /* Delay line 3 by 1 second */
+}
+
+.line4 {
+    left: 40%; /* Position line 4 */
+    animation-delay: 2.5s; /* Delay line 4 by 1.5 seconds */
+}
+
+.line5 {
+    left: 50%; /* Position line 5 */
+    animation-delay: 2s; /* Delay line 5 by 2 seconds */
+}
+
+.line6 {
+    left: 60%; /* Position line 6 */
+    animation-delay: 3s; /* Delay line 6 by 2.5 seconds */
+}
+
+.line7 {
+    left: 70%; /* Position line 7 */
+    animation-delay: 2s; /* Delay line 7 by 3 seconds */
+}
+
+.line8 {
+    left: 80%; /* Position line 8 */
+    animation-delay: 3s; /* Delay line 8 by 3.5 seconds */
+}
+
+.input-button-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bot-inp {
+  padding: 10px;
+   width: 80%; /* Takes full width of the parent */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  
+}
+
+.bot-but svg {
+  height: 50px;
+  width: 50px;
+}
+
+.bot-but {
+  position: absolute;
+  right: 10px; /* Position the button inside the input */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the button */
+  background-color: transparent;
+    border: none;
+ 
+  font-size: 20px; /* Adjust size of the arrow */
+  cursor: pointer;
+  color: #4CAF50; /* Adjust color as needed */
+}
+
+.bot-but:hover {
+  color: #45a049; /* Hover effect */
+}

@@ -1,0 +1,138 @@
+.bg-doctor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .doctor-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .patient-list {
+    display: flex;
+    flex: 1 1 45%;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .patient-list:hover {
+    transform: scale(1.02);
+  }
+  
+  .patient-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #ff9a9e;
+    transition: all 0.2s ease;
+  }
+  
+  .patient-item:hover {
+    border-left: 4px solid #fad0c4;
+    transform: scale(1.02);
+  }
+  
+  .patient-item h3 {
+    font-size: 1.4em;
+    color: #333;
+  }
+  
+  .patient-item p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .diagnose-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff9a9e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .diagnose-button:hover {
+    background-color: #fa7a85;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal h2 {
+    margin: 0 0 20px;
+    color: #333;
+  }
+  
+  .modal label {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .modal-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .modal-submit, .modal-close {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff9a9e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  
+  .modal-submit:hover, .modal-close:hover {
+    background-color: #fa7a85;
+  }
+  
+  @media (max-width: 768px) {
+    .doctor-container {
+      flex-direction: column;
+    }
+  
+    .patient-list {
+      flex: 1 1 100%;
+    }
+  }
+  

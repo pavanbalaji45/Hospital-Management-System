@@ -1,0 +1,108 @@
+/* Container for the main content */
+.order-lookup-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px; /* Spacing for the fixed navbar */
+    background-color: #f0f4f8;
+    min-height: 100vh;
+}
+
+/* Box for form and order details - default mobile size */
+.order-lookup-box {
+    width: 90%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Input styling */
+.order-lookup-input {
+    width: 95%; /* Match width to the button */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Button styling */
+.order-lookup-button {
+    width: 100%; /* Match width to the input */
+    padding: 1rem;
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-lookup-button:hover {
+    background-color: #6a11cb;
+}
+
+/* Orders list with scroll if content overflows */
+.orders-list {
+    max-height: 50vh; /* Limit height for scrolling */
+    overflow-y: auto;
+    margin-top: 1rem;
+}
+
+/* Order details */
+.order-details-container {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-detail-text {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Error message styling */
+.order-error-message {
+    color: red;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Media Queries */
+
+/* Larger screen sizes (laptops/desktops) */
+@media (min-width: 768px) {
+    .order-lookup-box {
+        width: 70%; /* Slightly larger on tablets and small laptops */
+    }
+}
+
+@media (min-width: 1024px) {
+    .order-lookup-box {
+        width: 50%; /* Larger on full-size laptops/desktops */
+    }
+}
+
+/* Extra-large screens */
+@media (min-width: 1440px) {
+    .order-lookup-box {
+        width: 40%; /* Max width on very large screens */
+    }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 480px) {
+    .order-lookup-box {
+        width: 90%; /* Smaller width on very small screens */
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .order-lookup-button,
+    .order-lookup-input {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}
